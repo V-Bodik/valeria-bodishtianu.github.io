@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Valeria Bodishtianu</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Collapsible style */
+        .collapsible {
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+        }
+        
+        .active, .collapsible:hover {
+            background-color: #f4f4f4;
+        }
+        
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,32 +42,70 @@
     <section id="projects">
         <h2>Working Papers</h2>
         
-        <h3><a href="https://arxiv.org/abs/2406.03299" target="_blank">Polarization under Biased Argument Sharing</a></h3>
-        <p><strong>Abstract:</strong> In this work, we're interested in examining how biased argument sharing within groups affects polarization dynamics and ideological convergence.</p>
+        <h3><a href="https://arxiv.org/abs/2406.03299" target="_blank">Polarization under Biased Argument Sharing</a> (with ...)</h3>
+        <button type="button" class="collapsible">▼ Abstract</button>
+        <div class="content">
+            <p><strong>Abstract:</strong> In this work, we're interested in examining how biased argument sharing within groups affects polarization dynamics and ideological convergence.</p>
+        </div>
 
-        <h3><a href="https://arxiv.org/abs/2406.03299" target="_blank">Information Aggregation in Presence of Media on a Network with Experts</a></h3>
-        <p><strong>Abstract:</strong> This paper explores the role of expert networks and media influence in shaping information aggregation across different groups.</p>
+        <h3><a href="https://arxiv.org/abs/2406.03299" target="_blank">Information Aggregation in Presence of Media on a Network with Experts</a> (with ...)</h3>
+        <button type="button" class="collapsible">▼ Abstract</button>
+        <div class="content">
+            <p><strong>Abstract:</strong> This paper explores the role of expert networks and media influence in shaping information aggregation across different groups.</p>
+        </div>
 
-        <h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4747531" target="_blank">When Do People Fact Check? An Experimental Study (with Dongfang Gaozhao and Pengfei Zhang)</a></h3>
-        <p><strong>Abstract:</strong> This paper investigates the causes and consequences of fact-checking. Through an online experiment, we examined three competing theories of fact-checking behavior—Value of Information, Limited Attention, and Motivated Reasoning—under varying conditions of incentives and prior awareness.</p>
+        <h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4747531" target="_blank">When Do People Fact Check? An Experimental Study</a> (with Dongfang Gaozhao and Pengfei Zhang)</h3>
+        <button type="button" class="collapsible">▼ Abstract</button>
+        <div class="content">
+            <p><strong>Abstract:</strong> This paper investigates the causes and consequences of fact-checking. Through an online experiment, we examined three competing theories of fact-checking behavior—Value of Information, Limited Attention, and Motivated Reasoning—under varying conditions of incentives and prior awareness.</p>
+        </div>
 
-        <h3><a href="https://arxiv.org/abs/2406.03299" target="_blank">The Good, the Bad, and the Hulk-like GPT: Analyzing Emotional Decisions of Large Language Models in Cooperation and Bargaining Games (with Mikhail Mozikov, Nikita Severin, Maria Glushanina, Mikhail Baklashkin, Andrey V. Savchenko, Ilya Makarov)</a></h3>
-        <p><strong>Abstract:</strong> This paper presents a novel framework to study the decision-making of large language models (LLMs) under emotional states, demonstrating how emotions can alter the strategies employed by LLMs in cooperative and bargaining scenarios.</p>
+        <h3><a href="https://arxiv.org/abs/2406.03299" target="_blank">The Good, the Bad, and the Hulk-like GPT: Analyzing Emotional Decisions of Large Language Models in Cooperation and Bargaining Games</a> (with ...)</h3>
+        <button type="button" class="collapsible">▼ Abstract</button>
+        <div class="content">
+            <p><strong>Abstract:</strong> This paper presents a novel framework to study the decision-making of large language models (LLMs) under emotional states, demonstrating how emotions can alter the strategies employed by LLMs in cooperative and bargaining scenarios.</p>
+        </div>
         
         <h2>Publications</h2>
         
-        <h3><a href="https://neurips.cc/" target="_blank">EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas (with ...), in NeurIPS 2024</a></h3>
-        <p><strong>Abstract:</strong> This study explores the alignment of LLMs with human ethical standards in strategic and ethical dilemmas, emphasizing the effect of emotions on decision-making and cooperation in game-theoretic scenarios.</p>
-        
-        <h3><a href="https://aaai.org/papers/632-flairs-2017-15469/" target="_blank">Logic of Existentialism in Fiction (with Ilya Makarov), in FLAIRS 2017</a></h3>
-        <p><strong>Abstract:</strong> This paper addresses the problem of fictional objects in logic and provides a framework for evaluating statements involving fictional entities in terms of existence and quantification across possible worlds.</p>
-        
-        <h3><a href="https://aaai.org/papers/412-flairs-2017-15463/" target="_blank">Adapting First-Person Shooter Video Game for Playing with Virtual Reality Headsets (with Ilya Makarov, Oleg Konoplia, Pavel Polyakov, Maxim Martynov, Peter Zyuzin, Olga Gerasimova), in FLAIRS 2017</a></h3>
-        <p><strong>Abstract:</strong> This paper explores advancements in combining virtual reality (VR) technologies with adaptive BOT behavior in first-person shooter games to enhance the realism and immersion of VR gameplay.</p>
+        <h3><a href="https://neurips.cc/" target="_blank">EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas</a> (in NeurIPS 2024)</h3>
+        <button type="button" class="collapsible">▼ Abstract</button>
+        <div class="content">
+            <p><strong>Abstract:</strong> This study explores the alignment of LLMs with human ethical standards in strategic and ethical dilemmas, emphasizing the effect of emotions on decision-making and cooperation in game-theoretic scenarios.</p>
+        </div>
+
+        <h3><a href="https://aaai.org/papers/632-flairs-2017-15469/" target="_blank">Logic of Existentialism in Fiction</a> (with Ilya Makarov, in FLAIRS 2017)</h3>
+        <button type="button" class="collapsible">▼ Abstract</button>
+        <div class="content">
+            <p><strong>Abstract:</strong> This paper addresses the problem of fictional objects in logic and provides a framework for evaluating statements involving fictional entities in terms of existence and quantification across possible worlds.</p>
+        </div>
+
+        <h3><a href="https://aaai.org/papers/412-flairs-2017-15463/" target="_blank">Adapting First-Person Shooter Video Game for Playing with Virtual Reality Headsets</a> (with Ilya Makarov, Oleg Konoplia, Pavel Polyakov, Maxim Martynov, Peter Zyuzin, Olga Gerasimova, in FLAIRS 2017)</h3>
+        <button type="button" class="collapsible">▼ Abstract</button>
+        <div class="content">
+            <p><strong>Abstract:</strong> This paper explores advancements in combining virtual reality (VR) technologies with adaptive BOT behavior in first-person shooter games to enhance the realism and immersion of VR gameplay.</p>
+        </div>
     </section>
     
     <footer>
         <p>&copy; 2024 Valeria Bodishtianu</p>
     </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
