@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    font-size: 20px; 
+    font-size: 18px; 
     line-height: 1.6
 }
 
@@ -35,5 +35,10 @@ footer {
     color: white;
 }
 p {
-    font-size: 20px; 
+    font-size: 18px; 
+}
+h3 {
+    font-weight: normal; /* Removes the bold */
+    font-size: 1.5em; /* Adjust the size if needed */
+    /* Add any other custom styling as desired */
 }
