@@ -39,6 +39,6 @@ p {
 }
 h3 {
     font-weight: normal; /* Removes the bold */
-    font-size: 1em 0; /* Adjust the size if needed */
+    font-size: 20px; /* Adjust the size if needed */
     /* Add any other custom styling as desired */
 }
