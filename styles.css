@@ -78,6 +78,13 @@ section {
     flex-shrink: 0;
 }
 
+.profile-photo {
+    display: block;
+    margin: 0 auto 20px;
+    width: min(100%, 280px);
+    height: auto;
+}
+
 footer {
     text-align: center;
     padding: 14px 0;
