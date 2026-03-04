@@ -3,8 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    font-size: 20px; 
-    line-height: 1.6
+    font-size: 20px;
+    line-height: 1.6;
+    color: #222;
 }
 
 header {
@@ -12,6 +13,14 @@ header {
     color: white;
     padding: 1em 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 8px;
 }
 
 nav a {
@@ -22,10 +31,31 @@ nav a {
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    padding: 24px;
+    margin: 24px auto;
+    max-width: 900px;
     background-color: white;
+}
+
+.intro-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.profile-photo {
+    width: clamp(220px, 26vw, 280px);
+    height: auto;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    margin-top: 0;
 }
 
 footer {
@@ -34,11 +64,30 @@ footer {
     background-color: #333;
     color: white;
 }
+
 p {
-    font-size: 20px; 
+    font-size: 20px;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 }
+
 h3 {
-    font-weight: normal; /* Removes the bold */
-    font-size: 20px; /* Adjust the size if needed */
-    /* Add any other custom styling as desired */
+    font-weight: normal;
+    font-size: 20px;
+}
+
+@media (max-width: 760px) {
+    .intro-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .profile-photo {
+        width: min(100%, 280px);
+    }
+
+    .intro-text {
+        width: 100%;
+    }
 }
