@@ -1,18 +1,28 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    font-size: 20px;
-    line-height: 1.6;
-    color: #222;
+    background: linear-gradient(180deg, #eef3f8 0%, #f9fbfd 100%);
+    color: #1e293b;
+    font-size: 19px;
+    line-height: 1.65;
 }
 
 header {
-    background-color: #333;
+    background: #1f2937;
     color: white;
-    padding: 1em 0;
+    padding: 1.25rem 0 1rem;
     text-align: center;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+nav {
+    margin-top: 0.75rem;
 }
 
 header h1 {
@@ -24,17 +34,63 @@ nav {
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    color: #e5e7eb;
+    margin: 0 12px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 section {
-    padding: 24px;
-    margin: 24px auto;
-    max-width: 900px;
+    padding: 32px;
+    margin: 30px auto;
+    max-width: 960px;
     background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.intro-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 2rem;
+    color: #0f172a;
+}
+
+.intro-lead {
+    font-size: 1.15rem;
+    color: #334155;
+}
+
+.profile-photo {
+    width: clamp(240px, 30vw, 340px);
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.16);
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    display: block;
+    margin: 0 auto 20px;
+    width: min(100%, 280px);
+    height: auto;
 }
 
 .intro-layout {
@@ -60,15 +116,16 @@ section {
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
+    padding: 14px 0;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    margin-top: 24px;
 }
 
 p {
-    font-size: 20px;
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
+    font-size: 1rem;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
 }
 
 h3 {
@@ -76,18 +133,27 @@ h3 {
     font-size: 20px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 720px) {
+    section {
+        margin: 16px;
+        padding: 22px;
+    }
+
     .intro-layout {
         flex-direction: column;
         align-items: center;
-        gap: 18px;
+        gap: 20px;
     }
 
     .profile-photo {
-        width: min(100%, 280px);
+        width: min(100%, 300px);
     }
 
     .intro-text {
         width: 100%;
+    }
+
+    .intro-text h2 {
+        font-size: 1.7rem;
     }
 }
