@@ -25,6 +25,14 @@ nav {
     margin-top: 0.75rem;
 }
 
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 8px;
+}
+
 nav a {
     color: #e5e7eb;
     margin: 0 12px;
@@ -83,6 +91,27 @@ section {
     margin: 0 auto 20px;
     width: min(100%, 280px);
     height: auto;
+}
+
+.intro-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.profile-photo {
+    width: clamp(220px, 26vw, 280px);
+    height: auto;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    margin-top: 0;
 }
 
 footer {
